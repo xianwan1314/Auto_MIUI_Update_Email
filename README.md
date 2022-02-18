@@ -12,7 +12,7 @@ Stp.6 It will get the Rom link and send to you every Friday.(UTC Time: 12 PM)
 
 # Notice
 It default get China MIUI, it support get any version if your Device have, like global, eea, ru.  
-It your device not have update, it will tell you *Not Updated* or *Not Pushed*.(Usually new device)
+It your device's update is *None*, it's because Xiaomi Official not push the Rom to Server.  
 
 # Thanks
 [XiaomiFirmwareUpdater](https://github.com/XiaomiFirmwareUpdater)

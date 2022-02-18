@@ -1,0 +1,30 @@
+name: GetUpdate
+
+on:
+  schedule:
+    - cron:  '0 12 * * FRI'
+env:              
+  #Please change your email address
+  Email_Address: '341131483@qq.com'
+  
+jobs:
+  GetUpdate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install path
+        run: |
+          sudo apt install python3 python3-pip git sendemail libio-socket-ssl-perl libnet-ssleay-perl -y
+          pip3 install requests
+          pip3 install --ignore-installed pyyaml
+          
+      - name: Get MIUI Update
+        run: |
+          bash GetUpdate.sh
+      
+      - name: Send Email
+        run: |
+          now=$(date +"%Y-%m-%d %H:%M:%S")
+          Links=$(cat NewLink.txt)
+          sendemail -o message-charset=utf8 -f 341131483@qq.com -t ${{ env.Email_Address }} -u "MIUI Auto Updater $now" -m "$Links" -s smtp.qq.com -o tls=yes -xu 341131483@qq.com -xp qmbezrvalhpfbjic > /dev/null 2>&1

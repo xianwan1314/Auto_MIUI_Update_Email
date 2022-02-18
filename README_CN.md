@@ -11,8 +11,8 @@ Stp.5 前往 *Actions* 页面并点击 *I understand my workflows, go ahead and 
 Stp.6 本项目将在每周五晚推送更新到邮箱, 后续或将支持每日推送.(北京时间: 晚上8点)
 
 # 注意事项
-本项目默认获取中国版 MIUI, 如果您的设备存在其他版本, 本项目也支持获取, 例如: global、eea、ru等  
-如果您的设备没有更新, 我们将会标明 *未更新* 或 *未推送*(一般存在于新发布的设备)
+本项目默认获取中国版 MIUI, 如果您的设备存在其他版本, 本项目也支持获取, 例如: global、eea、ru等.  
+如果您的设备更新是*None*, 那是因为小米官方没有将Rom推送到OTA服务器.  
 
 # 特别鸣谢
 [XiaomiFirmwareUpdater](https://github.com/XiaomiFirmwareUpdater)

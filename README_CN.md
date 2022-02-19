@@ -3,7 +3,7 @@ Designed by [NightstarSakura](https://github.com/NightstarSakura)
 [English Version](https://github.com/NightstarSakura/Auto_MIUI_Update_Email/blob/main/README.md)
 
 # 使用方法
-Stp.1 Fork 本仓库.
+Stp.1 Fork 本仓库.  
 Stp.2 在 *.github/workflows/GetUpdate.yml* 里修改你的邮箱地址.  
 Stp.3 删除 *GetUpdate.sh* 中你所需要获取的机型前的 *#*  
 Stp.4 如果你不需要国内版的MIUI, 请更改 *GetUpdate.py* 内的 *region = "cn"* 中的 *cn*.  

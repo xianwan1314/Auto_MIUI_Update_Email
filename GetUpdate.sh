@@ -30,6 +30,6 @@ for device in ${devices}
 	do
 	model=$(echo ${device} | cut -d = -f2)
 	device=$(echo ${device} | cut -d = -f1)
-	python3 GetUpdate.py ${device} > NewLink.txt
+	python3 GetUpdate.py ${device} >> NewLink.txt
 done
 exit
